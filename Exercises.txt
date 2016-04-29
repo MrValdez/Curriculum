@@ -1,0 +1,245 @@
+1. Data Types
+    a = 1
+    b = 2
+    print(a + b)
+
+
+2. Exercise. Introduce print and input functions
+
+    print ("Hello. What is your name?")
+    name = input()
+    print ("You are " + name)
+
+3. Exercise. Code organization: one line - one instruction
+
+    print ("Hello. What is your name?")
+    name = input()
+    message = "You are " + name
+    print(message)
+
+4. Introduce operators
+
+   Math operators: + - / *
+    
+    Exercise.
+    
+    print ("Type your first name.")
+    first_name = input()
+    print ("Type your last name.")
+    last_name = input()
+    print ("Your full name is " + first_name + " " + last_name)
+    
+    Exercise.
+    print ("Your full name is {} {}".format(first_name, last_name))
+    
+    Exercise. clean code. easier to read if one instruction per line.
+    message = "Your full name is {} {}".format(first_name, last_name)
+    print (message)
+    
+
+5. Exercise. 
+    print ("Type a number:")
+    number1 = input()
+    print ("Type another number:")
+    number2 = input()
+    total = number1 + number2
+    print ("Total is " + total)
+    
+   Ask what happened. Explain that input() returns string
+   
+  String operator: +
+   
+   Exercise.
+    print ("Type a number:")
+    number1 = input()
+    number1 = int(number1)
+    print ("Type another number:")
+    number2 = int(input())
+    total = number1 + number2
+    print ("Total is " + total)
+
+   Explain that both forms are valid.
+   There will still be a bug. Introduce str.
+    print ("Total is " + str(total))
+   
+   Review data types.
+
+
+6. Exercise. Introduce optional parameters
+    age = input("How old are you? ")
+    print ("You are {} years old".format(age))
+
+
+
+7. Boolean. Introduce Boolean.
+
+    Exercise.
+
+    age = input("How old are you? ")
+    age = int(age)
+
+    if age >= 18:
+        print ("You can vote")
+
+    Introduce if statements.
+    Introduce conditional operators: > < >= <= == !=
+    
+    Exercise. Introduce else.
+    
+    else:
+        print ("You may not vote")
+
+    Exercise. Introduce elif.
+
+    elif age <= 0:
+        print ("Invalid age")
+
+
+8. Code block. 4 spaces. { } in other langauges
+
+    age = input("How old are you? ")
+    age = int(age)
+
+    if age >= 18:      
+        print ("You can vote")
+        print ("Vote right")
+    elif age >= 13 and age <= 17:
+        print ("Wait a bit")
+    else:              
+        print ("You may not vote")
+
+
+9. Exercise. Introduce lists
+
+fruits = ["Apple", "Grapes", "Guyabano", "Durian"]
+print (fruits[1])       # Grapes
+print (fruits[0])       # Apple
+i = 3
+print (fruits[i])       # Durian
+
+# print (fruits[4])     # IndexError
+print (fruits[-1])      # Durian
+print (fruits[-3])      # Grapes
+# print (fruits[-5])    # IndexError
+
+Introduce for-loops.
+
+# for loop
+# C:    for (<init>; <cond>; <move the iteration>)
+# Java: for (<init>; <cond>; <move the iteration>)
+
+# for (int i = 0; i < 4; i++)
+for i in range(4):
+    print (fruits[i])
+
+print ("---")
+
+#"Apple", "Grapes", "Guyabano", "Durian"
+#  0,        1,       2,           3
+
+# for (int i = 1; i < 4; i+=2)
+for i in range(1, 4, 2):
+    print (fruits[i])
+
+print ("---")
+
+# foreach
+for fruit in fruits:
+    print (fruit)
+    
+10. Introduce String functions
+
+# string functions
+movie = "Titanic"
+
+print(movie.upper())
+print(movie.lower())
+print(movie.swapcase())
+
+movie = "saan ka man naroon"
+print(movie.title())
+
+11. Introduce in operator.
+
+colors = ["Red", "Purple", "Pink", "Black", "Blue"]
+
+# boolean operator
+# <element> in <list>
+
+print("red" in colors)          # False
+print("Red" not in colors)      # False
+print("red".title() in colors)  # True
+
+
+12. Introduce turtle/logo programming
+
+# logo turtle
+# logo programming
+
+import turtle
+
+turtle.forward(100)
+turtle.left(90)
+turtle.penup()
+turtle.forward(100)
+turtle.left(90)
+turtle.pendown()
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+
+turtle.exitonclick()
+
+
+Quiz. Make a turtle program drawing a letter. If a letter has already been drawn, you cannot draw that letter.
+
+
+13. Introduce random
+
+import random
+
+names = ["Van", "Junjun", "Kevin", "Jerick", "Matthew"]
+random.shuffle(names)
+print(names)
+
+lucky = random.choice(names)
+
+print("Today's lucky person is " + lucky)
+
+
+14. Introduce multi-line string
+
+
+15. Introduce list slicing.
+
+
+16. Introduce list functions: append, remove, reverse
+
+names = ["Van", "Junjun", "Kevin", "Jerick", "Matthew"]
+names.append("John")
+names.remove("Van")
+
+print(names[0])   # Junjun
+print(names[4])   # John
+
+names.append("Buttercup")
+print(len(names))   # 6
+
+#names.remove("Van") # ValueError
+print(len(names))   # 6
+
+names[3] = "Van"
+names.reverse()
+print(names)        # [Buttercup, John, Van, Jerick, Kevin, Junjun]
+
+
+
+17. Introduce string functions, count, split, join.
+
+
+
+18. Introduce file open()
+
+Introduce with statement
+
+19. Introduce OOP

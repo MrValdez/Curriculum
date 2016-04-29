@@ -1,0 +1,38 @@
+Part 1. 1 day Basic Python Programming.
+
+\item Data Types
+\item Functions: print and input
+\item Function: format
+      Code organization: one line - one instruction.
+\item Math operators: + - / *
+\item String operator +
+\item Functions: int, str
+      Review data types.
+\item Optional parameters
+\item Boolean.
+\item If statement
+\item conditional operators: > < >= <= == !=
+\item else
+\item elif
+\item Code blocks
+\item Lists
+\item list functions: append, remove, len
+\item for-loops.
+\item range function
+\item list slicing.
+\item list function: reverse    
+\item String functions, upper, lower, swapcase, title, format
+\item string functions, count, split, join.
+\item in operator.
+\item multi-line string
+\item file function: open()
+\item with statement
+\item random library
+      shuffle, choice, randint
+\item turtle/logo programming
+      introduce help() and python manual
+      Quiz. Make a turtle program drawing a letter. If a letter has already been drawn, you cannot draw that letter.
+      
+Part 2
+\item Introduce OOP
+\item tkinter
