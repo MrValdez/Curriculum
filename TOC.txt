@@ -51,7 +51,7 @@ Part 2
 \item Internet/Network connection
 \item Web Programming
 \subitem Flask
-\subitem Dhango
+\subitem Django
 \item Game Programming
 \item Machine Learning
 
