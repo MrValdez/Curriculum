@@ -9,30 +9,53 @@ Part 1. 1 day Basic Python Programming.
 \item Functions: int, str
       Review data types.
 \item Optional parameters
+\item String functions, upper, lower, swapcase, title, format
+\item multi-line string
 \item Boolean.
+\item Boolean operators: and, or, not
+\item Lists
+\item list functions: append, remove, len
+\item for-loops.
+\item Code blocks
+\item range function
 \item If statement
 \item conditional operators: > < >= <= == !=
 \item else
 \item elif
-\item Code blocks
-\item Lists
-\item list functions: append, remove, len
-\item for-loops.
-\item range function
 \item list slicing.
-\item list function: reverse    
-\item String functions, upper, lower, swapcase, title, format
-\item string functions, count, split, join.
 \item in operator.
-\item multi-line string
+\item list function: reverse    
+\item string functions: count, split, join.
 \item file function: open()
 \item with statement
 \item random library
       shuffle, choice, randint
+\item making a function
+      use random library
 \item turtle/logo programming
       introduce help() and python manual
       Quiz. Make a turtle program drawing a letter. If a letter has already been drawn, you cannot draw that letter.
+\item importing function from other files
+\item Object Oriented Programming
+\item Error handling
+      try-except
+      
       
 Part 2
 \item Introduce OOP
 \item tkinter
+\item Kivy
+\item Database
+\subitem sqlite
+\subitem sqlalchemy
+\item Internet/Network connection
+\item Web Programming
+\subitem Flask
+\subitem Dhango
+\item Game Programming
+\item Machine Learning
+
+Part 3
+\item Programming Practices
+\item Pythonic Programming
+\item Difference between Python and other languages
