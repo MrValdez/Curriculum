@@ -1,5 +1,5 @@
 Part 1. 1 day Basic Python Programming.
-(4 hours)
+(3.5 hours)
 
 \item Data Types
 \item Functions: print and input
@@ -26,6 +26,7 @@ Part 1. 1 day Basic Python Programming.
 \item list slicing.
 \item in operator.
 \item list function: reverse    
+\item tuple
 \item string functions: count, split, join.
 \item file function: open()
 \item with statement
@@ -33,7 +34,9 @@ Part 1. 1 day Basic Python Programming.
       shuffle, choice, randint
       introduce help() and dir()
 \item making a function
-      use random library
+      exercise: use random library
+	  optional parameter (remind with input())
+	  named parameter
 \item turtle/logo programming
       introduce help() and python manual
       Quiz. Make a turtle program drawing a letter. If a letter has already been drawn, you cannot draw that letter.
@@ -43,13 +46,14 @@ Part 1. 1 day Basic Python Programming.
       try-except
       
       
-Part 2
+Part 2. Practical Programming
 \item Introduce OOP     (30 mins)
 \item tkinter           (.5 to 1 hr)
 \item Kivy             
-\item Database          (3hrs)
+\item Database          (3-5hrs)
 \subitem sqlite         (2hrs)
 \subitem sqlalchemy     (3hrs)
+\item Multimedia
 \item Internet/Network connection
 \item Web Programming
 \subitem Flask          (4hrs)
@@ -59,6 +63,7 @@ Part 2
 
 Part 3
 \item Programming Practices
+\item Unit testing
 \item Pythonic Programming
 \subitem Truthiness in Python
          == vs is
