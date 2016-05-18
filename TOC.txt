@@ -2,13 +2,14 @@ Part 1. 1 day Basic Python Programming.
 (3.5 hours)
 
 \item Data Types
-\item Functions: print and input
-\item Function: format
-      Code organization: one line - one instruction.
+\item Functions: print
 \item Math operators: + - / *
 \item String operator +
+\item Functions: input
 \item Functions: int, str
       Review data types.
+\item Function: format
+      Code organization: one line - one instruction.
 \item Optional parameters
 \item String functions, upper, lower, swapcase, title, format
 \item multi-line string

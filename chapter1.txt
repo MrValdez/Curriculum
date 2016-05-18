@@ -1,0 +1,125 @@
+Programming involves reading and logic. Look at following example:
+
+\begin{code}
+
+a = 1
+b = 1
+\rowcolor{} print (a + b)
+
+\end{code}
+
+\begin{Quiz}
+Can you tell me what the output of line 3 is?
+\end{Quiz}
+
+Even if its your first time to see source code, you should have an idea on what line 3 does. Let try this example out by typing it in your Python shell.
+
+<screenshot>
+
+\begin{Retrospective}
+Was your answer correct?
+\end{Retrospective}
+
+The Python program we have created has three lines. The first line creates what is called a \textit{variable}. This variable is named "a". This variable can contain a value (we call this data). The value is the number 1.
+
+The second line does the same, only this time, we name the variable "b".
+
+The third line uses what we call a \color{function}. The meaning of functions will be explained in detail later, but for now, think of functions as instructions for the computer. In this case, the function "print" shows or outputs the value inside the parenthesis.
+
+<screenshot explaining (a + b)>
+
+Congratulations. This is your first Python program.
+
+\section{Data Types}
+
+Now, let's talk about data. Data is the value that is contained inside a variable. There are different kinds of data. Look at the following table:
+
+Integer     1, 3, 42, -19, 0            Integers are numbers.
+Float       0.5, 3.14, -99.2, 1.99      Floats are numbers with decimal points. \footnote{While it might look like float is perfect for money, there is a good reason programmers don't use this data type. Instead, two Integers are used. More information on why can be at Part 3}
+String      "Hello World", "Python, "MagandaÑg umaga"   Strings are data that are enclosed in double quotes.
+
+\begin{Intermediate}
+Python is a dynamic type language. Programmers who came from a static type language will be surprised that Python will not throw compiler errors if the wrong data type is used. We try to focus on data types as much as possible because it is a common source of errors for complete beginners. 
+
+We will be expanding the table of data types, so don't worry if you don't see your favorite data type. Its in there somewhere.
+\end{Intermediate}
+
+\begin{Python2}
+One of the changes between Python 2.x and 3 is the String data type. In Python 2.x, there are two String data types: unicode and string for ASCII. By default, Strings inside the double quotes are ASCII encoded, but if you add the prefix u to the double quotes, Python 2.x will treat it as unicode. Consider this example:
+
+u"(V●ᴥ●V)" is valid data. "(╯°□°)╯︵ ┻━┻" is not.
+
+TODO! find better example
+\end{Python2}
+
+<fancify: identity = "Bicycle Repair Man">
+
+In this example, {identity} is the name of the variable. The = symbol tells Python to assign the data from the right side of the = symbol to the variable to the left side. "Bicycle Repair Man" is a string and is the value inside {identity}. Finally, the variable {identity} has a data type of String because of its value.
+
+\begin{code}
+a = 7
+b = 11
+\rowcolor{} print (a - b)
+
+FirstName = "Santa"
+LastName = "Clause"
+FullName = FirstName + LastName
+print(FullName)
+
+\end{code}
+
+\begin{Quiz}
+What is the output of line 3?
+What is the output of line 8?
+Why?
+\end{Quiz}
+
+If you try this program in the Python shell, you will get an output of -3 and "SantaClause". Let's go over each output.
+
+Line 3 is basically the same as your very first program. Only now, we use the - symbol. The value of a is 7 and the value of b is 11. We subtract b from a using the - symbol. Finally, we print the result.
+
+Before continuing, we need to talk about operators. Here are example of operators:
+
+Numeric Operators
++   addition
+-   subtraction
+*   multiplication
+/   division
+
+The simpliest explanation is this: an operator takes the value at the right side of the symbol and does something with it on the left side of the symbol. The result is finally returned.
+
+1 + 1. Here, we use the + symbol. On the left and right side of the operator, we see the same value (1) and the same data type (Integer). Since both sides are numeric, + is the addition operator. 1 and 1 is added, resulting in 2, which is returned by the program.
+
+String Operators
++   Concatenation
+
+"Santa" + "Clause". We also use the + symbol in this example. But this time, the left and right side of the operator is a String. In programming, this string operation is called \textit{String Concatenation}. The output of this operation is "SantaClause".
+
+\begin{Quiz}
+Why is the output "SantaClause"?
+How do we change this line to output "Santa Clause"?
+
+Hint: Remember in the introduction where we explain that a computer will do exactly what you tell it to do.
+\end{Quiz}
+
+\section{Input() function}
+
+\begin{Intermediate}
+We will now talk on how a Python program is executed from a script.
+\end{Intermediate}
+
+<Talk about creating a new file, saving, and running via F5. Intermediate talk about Run menu and also that running from command line later in the chapter>
+
+\begin{code}
+print("What is your name? ")
+name = input()
+print("Hello " + name)
+\end{code}
+
+Run this program. The computer should be asking you for your name. Type in your name. Try to understand this code before continuing.
+
+\begin{Quiz}
+What do you think is the purpose of input()?
+Why does line #1 have a space at the end of the string?
+\end{Quiz}
+
