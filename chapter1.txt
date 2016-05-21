@@ -353,6 +353,21 @@ input([prompt])    -> output prompt (default value is "") and take an input from
 Rewrite the previous examples (cite code with inputs) to use the prompt parameter.
 \end{exam}
 
+\begin{exam}
+\begin{code}
+print ("Type a number:")
+number1 = input()
+print ("Type another number:")
+number2 = input()
+total = number1 + number2
+print (number1 + number2 = total)
+\end{code}
+
+Rewrite this code so you can type in two numbers, get the total, and output the result.
+
+Example: if the user types in -10 and 10, the output would be "-10 + 10 = 0".
+\end{exam}
+
 \begin{BreakTime}
 Get up and walk for 5 minutes. Sitting down all day is bad for your health. Let's circulate your blood and energize your body.
 \end{BreakTime}
