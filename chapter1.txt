@@ -61,6 +61,9 @@ a = 7
 b = 11
 \rowcolor{} print (a - b)
 
+a = 99
+\rowcolor{} print (a * b)
+
 FirstName = "Santa"
 LastName = "Clause"
 FullName = FirstName + LastName
@@ -70,13 +73,20 @@ print(FullName)
 
 \begin{Quiz}
 What is the output of line 3?
-What is the output of line 8?
+What is the output of line 7? (Note that the symbol * means multiplication)
+What is the output of line 13?
 Why?
 \end{Quiz}
 
 If you try this program in the Python shell, you will get an output of -3 and "SantaClause". Let's go over each output.
 
 Line 3 is basically the same as your very first program. Only now, we use the - symbol. The value of a is 7 and the value of b is 11. We subtract b from a using the - symbol. Finally, we print the result.
+
+On line 6, we replace the value found inside a with 99. This menas that on line 7, the value of a is 99. It is no longer 7. Thus, the final output of line 7 is 99 multiply by 11 (a * b). 
+
+\begin{ProgrammerThink}
+Have you noticed that the program moves from the top of the file and down towards the bottom. This is what we call the \textit{Program Flow}. There are programming commands that changes the order, but the basic programming foundation is that we start from the top and go down to the bottom.
+\end{ProgrammerThink}
 
 Before continuing, we need to talk about operators. Here are example of operators:
 
@@ -108,7 +118,20 @@ Hint: Remember in the introduction where we explain that a computer will do exac
 We will now talk on how a Python program is executed from a script.
 \end{Intermediate}
 
-<Talk about creating a new file, saving, and running via F5. Intermediate talk about Run menu and also that running from command line later in the chapter>
+<Talk about creating a new file, saving, and running via F5. Intermediate talk about Run menu and also that running from command line later in the chapter.
+
+Remember to mention that the new file should be named "Exercise <section>.py" for consistency.
+
+\begin{Intermediate}
+We use this file convention for two purposes: to make it easier for the reader to find their code and to prevent ambigious filenames later when libraries are introduced.
+\end{Intermediate}
+>
+
+\begin{Python2}
+For Python 2.x, replace input() with raw_input().
+
+Python 2.x's input() is a completely different function from Python 3's input().
+\end{Python2}
 
 \begin{code}
 print("What is your name? ")
@@ -123,3 +146,216 @@ What do you think is the purpose of input()?
 Why does line #1 have a space at the end of the string?
 \end{Quiz}
 
+We introduce a new function, input. Similar to print, the input function has parenthesis afterward the function name. The purpose of input() is to receive keyboard input from the user and returns this data to the program. In this case, the result from input is assigned to name.
+
+The function print does not return any new data. The funtion input returns new string data.
+
+\begin{Exam}
+Create a program that asks the user for the age. Print their age.
+\end{Exam}
+
+\begin{BreakTime}
+Before continuing, now would be a good time to review the code that you have created since starting the chapter. Also, I would like you to review the tables we have given. As you continue with this chapter, we will build your foundation in programming and Python. These review sessions will serve as a natural break, before we move to the next fundamentals. 
+
+Stand up and give yourself a stretch. Once you feel that you are ready, let's move to the next section.
+\end{BreakTime}
+
+\section[TypeError]{Knowing your data type operators}
+
+\begin{code}
+print("How old are you? ")
+age = input()
+age = age + 10
+
+print("After 10 years, you will be " + age + " years old")
+\end{code}
+
+I want you to run this program and type in your age.
+
+Done? You should see the following message:
+
+<Error message screenshot>
+
+In your Idle program, you can right-click on the line number and click on "go to line". It should highlight the line with the error
+
+<Error message screenshot>
+
+\begin{ProgrammerThink}
+This is what we call a programming error.
+
+Part of programming is to understand these errors and fix them. A typical programming session can expose many errors. It is a normal part of programming life.
+
+Most students panic upon seeing an error. A programmer should never fear them. All programmers have the ability to overcome any errors.
+
+In this chapter, we will sometimes introduce errors to the code. By showing you the scenarios in which errors are created, we hope that you will get used to errors and why they happen.
+\end{ProgrammerThink}
+
+Line 3 has the error, so we should try to understand why this code do not work. Run the following code in your Python shell (we do it this way so we won't have to replace the above code).
+
+\begin{code}
+a = "11"
+b = "5
+print(a + b)
+\end{code}
+
+The above code is similar to the very first exercise we've done. But what is the output? The output is "115". The reason here is that a does not contain a number, but it contains a string. The variable b is also a string. If we use the + operator with a string on the right side and a string on the left side, we use string concatenation.
+
+Now try this code:
+
+\begin{code}
+c = "One"
+d = 1
+print(c + d)
+\end{code}
+
+In this code, we try to use the + operator. But, there's a mismatch on the data type - one side is a string, and the other is a number. This confuses the computer. A computer is not smart enough by itself to figure out what you mean by this instruction. Instead of guessing what you want to happen, it tells the programmer that it does not understand the instruction.
+
+The error in this particular examples is called "TypeError". We will be introducing other errors as we add to your programming fundamentals. For now, let's try to fix the error in the first code on this section.
+
+\begin{Intermediate}
+Python is a dynamic type language. The data type for variables can change at any time. This allows the language to support programming features such as duck typing. The trade-off is that Python do not have a built-in pre-compilation step to detect if the wrong data type is in used in an instruction.
+
+This is why the early part of this chapter focuses on data types.
+\end{Intermediate}
+
+\begin{code}
+print("How old are you? ")
+age = input()
+age = age + 10
+
+print("After 10 years, you will be " + age + " years old")
+\end{code}
+
+Try to remember the previous section. We describe the input function as a function that returns a string data type. In short, whatever the user types into the computer is turned into a string. The variable age is a string and we tried to use the + operator on an integer and a string.
+
+Let's fix this by introducing a new function:
+
+\begin{code}
+print("How old are you? ")
+age = input()
+age = int(age)
+age = age + 10
+
+print("After 10 years, you will be " + age + " years old")
+\end{code}
+
+Here, the function int takes an argument, changes the data type to integer and returns it to the program. So by line 4, age has changed into an integer data type. Now run the program.
+
+We should arrive at a new error! This time, it's on the last line. Before reading the next paragraph, try to figure out why this line has failed.
+
+...Why did the line failed? The answer is the same: we tried to use the + operator on the age integer with a string. So we need to change the integer into a string.
+
+\begin{code}
+print("How old are you? ")
+age = input()
+age = int(age)
+age = age + 10
+
+print("After 10 years, you will be " + str(age) + " years old")
+\end{code}
+
+So now we have introduced four functions. Here are the functions signatures (the parameters they use), their behaviors, and their outputs:
+
+print(message)     -> outputs message to the user
+                   -> returns None
+input()            -> takes an input from the user's keyboard
+                   -> returns string
+int(variable)      -> converts the variable into an integer
+                   -> returns integer
+str(variable)      -> converts the variable into a string
+                   -> returns string
+
+You might have noticed that some functions takes values that changes its behavior. These are called parameters and we will explain this in detail later.
+
+\begin{ProgrammerThink}
+The above code can also be written this way:
+
+\begin{code}
+print("How old are you? ")
+age = int(input())
+age = age + 10
+
+print("After 10 years, you will be " + str(age) + " years old")
+\end{code}
+
+Similar to how there are many different handwrittings, programmers also have different coding style. There are some coding style that are \textit{good practices} and is definitely a good idea to adopt. Think of these good practices as being similar to dotting your {i}s and crossing your {t}s when writing - you don't have to do that, but it helps the reader in understanding your handwriting.
+
+In this coding style, we have combined two functions. Some developers follow the rule of one instruction per line as in our first example. While others prefer the above.
+
+In part 3, we will be exploring the different coding style. But for now, we need to build up your programming foundation so you would understand why they are good practices. In addition, if you have a good foundation, you can decide if a particular coding style suits you or not.
+\end{ProgrammerThink}
+
+\begin{Intermediate}
+You might have noticed that int(variable) will return an error if a non-number is given. There are many ways to handle this such as:
+1. Using a string function to check if a string has numbers
+2. Catch the error
+
+String functions and error handling will be introduced later in the chapter.
+\end{Intermediate}
+
+\section{format function}
+
+\begin{code}
+print("How old are you? ")
+age = int(input())
+
+message = "You are {} years old".format(age)
+print(message)
+\end{code}
+
+In this code, we took the example from the previous section. We introduce a new function called format. Format is a string function.
+
+(Note: its easy to miss but the symobls inside the string are curly braces. Many students misread that as parenthesis.)
+
+\begin{Quiz}
+Without running the above code, what do you think is the output if you typed in 11?
+\end{Quiz}
+
+The format function is simple: it replaces the {} in the string on the left side of format with the values inside the parenthesis. The new string created is then returned to the program. This function removes the need for the str function as it converts the variables automatically.
+
+\begin{Intermediate}
+You might have realized that format is a class method. Data types in Python are defined as classes. But for this chapter, we will be refering to them as functions until we discuss Object Oriented Programming.
+
+(todo: double check)
+\end{Intermediate}
+
+\begin{code}
+print("What is your name? ")
+name = input()
+print("How old are you? ")
+age = int(input())
+
+message = "You are {} and you are {} years old".format(name, age)
+print(message)
+\end{code}
+
+Format can take multiple parameters. But there should be at least an equal number of parameters as there are parameters.
+
+\section{input's parameters}
+\begin{code}
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+
+message = "You are {} and you are {} years old".format(name, age)
+print(message)
+\end{code}
+
+Run this code and think how it differs with the previous code. Explain to yourself this code.
+
+Some functions have optional parameters. Optional is the opposite of required. The print, int, and str functions requires parameters. The function input does not require a parameter but if you give it a parameter, it will change its behavior.
+
+The real function signature for input looks like this:
+
+input([prompt])    -> output prompt (default value is "") and take an input from the user's keyboard
+                   -> returns string
+
+\begin{exam}
+Rewrite the previous examples (cite code with inputs) to use the prompt parameter.
+\end{exam}
+
+\begin{BreakTime}
+Get up and walk for 5 minutes. Sitting down all day is bad for your health. Let's circulate your blood and energize your body.
+\end{BreakTime}
+
+\section{String functions}
+\begin{code}
