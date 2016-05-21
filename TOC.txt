@@ -46,7 +46,7 @@ Part 1. 1 day Basic Python Programming.
 \item Error handling
       try-except
       
-      
+
 Part 2. Practical Programming
 \item Introduce OOP     (30 mins)
 \item tkinter           (.5 to 1 hr)
@@ -54,6 +54,7 @@ Part 2. Practical Programming
 \item Database          (3-5hrs)
 \subitem sqlite         (2hrs)
 \subitem sqlalchemy     (3hrs)
+\subitem peewee
 \item Multimedia
 \item Internet/Network connection
 \item Web Programming
@@ -61,6 +62,32 @@ Part 2. Practical Programming
 \subitem Django         (2 days)
 \item Game Programming  (1 week)
 \item Machine Learning
+
+Part 2. Practical Programming
+\item Introduce OOP     (30 mins)
+\item Database
+\subitem peewee
+\item Web Programming
+\subitem Django         (2 days)
+
+
+\iffalse
+Part 2. Practical Programming
+\item Introduce OOP     (30 mins)
+\item tkinter           (.5 to 1 hr)
+\item Kivy             
+\item Database          (3-5hrs)
+\subitem sqlite         (2hrs)
+\subitem sqlalchemy     (3hrs)
+\subitem peewee
+\item Multimedia
+\item Internet/Network connection
+\item Web Programming
+\subitem Flask          (4hrs)
+\subitem Django         (2 days)
+\item Game Programming  (1 week)
+\item Machine Learning
+\fi
 
 Part 3
 \item Programming Practices
