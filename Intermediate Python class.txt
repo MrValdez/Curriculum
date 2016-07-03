@@ -1,0 +1,145 @@
+Request for one or two whiteboards. Two is nice-to-have.
+
+
+Target Audience: Intermediate (at least 1 year of programming in any programming langauge)
+Objective: To get up to speed in Python and to develop simple programs.
+Total time: 8 hours. 1 hour lunch (possibly early lunch to get the energy going). 30 mins merienda/snacks
+
+
+
+0. Check that everyone's Python is working.
+Make sure that Python 3 is installed.
+Make sure that Environment is properly setup (e.g. Python and pip can be run on their system)
+Make sure that virtalenv works.
+(30 minutes)
+
+
+1. Python Basics (2.5 hrs)
+- Assigning varibles (static and dynamic type languages)
+-- data types review
+-- integer operators
+-- float operators
+--- difference between Python 2 and 3
+-- boolean
+--- conditional operators
+-- string
+-- unicode
+--- difference between Python 2 and 3
+- Making a function
+-- Exercises: Print hello world. 
+              Print name (parameters).
+              Print record (named parameters)
+              Print birthday (default parameters)
+- String operators (+ * %) 
+- String functions
+-- String.upper, lower, titlecase, swapcase
+-- string count
+-- String.strip, replace
+-- String.isnumeric, isalpha, isdecimal, isdigit
+-- String.format()
+- Quiz: Change the functions written previously to use format.
+- If-elif-else condition
+- List
+-- emphasis that List ia an iterator in preparation of iteritems(), enumerate, yield, and user-created iterators
+- in operator
+- List functions
+- len()
+-- List and String
+- Sorting lists
+- Functions as a data type
+- Sorting lists with functions
+- Quiz: Sort by nth letter of string
+- reverse sort within function
+- reverse functions
+- For loop
+-- enumerate
+- List comprehension
+- Tuple
+- import random
+- Exam: Create a deck of cards (use either list or tuple). Shuffle it.
+
+Early Lunch Break (1 hr)
+
+2. Python Beginner to Pythonista (2hrs)
+- string.punctuation, digits, ascii_letters
+- Unpacking
+-- Basic (e.g. a, b = 1, 2)
+-- Functions (allows for multiple values to be returned)
+-- Loop
+- Zip function
+-- unzip
+- Pythonista's String functions
+-- Split
+-- join
+--- Common delimeters: ' ' and ','
+- Set
+- Dictionary
+-- items(), keys, items()
+-- iteritems(), iterkeys, iteritems()
+- Quiz: Given a string, seperate each word and count how many each word there. Use either dictionary, list or tuple. Bonus: Do all.
+- Multi-line string
+- Quiz: Same as above except using a multi-line string. Choose Team Edward or Team Jacob.
+- Reading and writing files
+- Quiz: Same as above but using files
+- dir() interspection
+- import pprint
+-- introduce pretty print
+-- explain why pprint.pprint is used
+-- from pprint import pprint
+- making your own import
+-- __init__.py
+- Comments
+- Documentation
+-- help()
+-- writing your own documentation
+- pep8
+-- import this
+
+(30 minutes merienda break)
+
+3. Real World Python (2 hrs)
+- Try-catch-except
+- Class
+-- constructor
+-- "private" methods
+-- inheritance
+--- super()
+-- dunder functions
+- exercise: Make a Person Record class (First Name, Last Name. Age). Bonus: Make a class with "Extra Information" (e.g. birthday, height, weight, etc).
+- Exam: Make a Facebook CRUD application (30 mins)
+
+- import pdb
+- unittest
+-- unittest.mock
+- Python Standard Library or Batteries included:
+-- (possibly with examples after all libraries in this list are introduced)
+--- csv
+--- sqlite
+--- os
+--- time
+--- logging
+--- http.server
+-- (Quick introductions)
+--- pickle
+--- itertools
+--- functools
+--- operator
+--- configparser
+--- hashlib
+--- argparse
+--- socket
+--- json, email, html
+--- zlib, gzip, zipfile
+
+- Quick overview on popular Python libraries
+-- sqlalchemy
+-- numpy
+-- matplotlib
+-- flask
+-- django
+-- beautiful soup
+
+
+4. Hackathon (1 hr)
+- Create a program in one hour (look up Python.Ph's previous hackathon)
+- Upload to github and FB
